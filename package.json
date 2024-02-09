@@ -1,0 +1,16 @@
+{
+  "name": "@deposits/validators",
+  "version": "0.0.0",
+  "description": "A list of Vuelidate validators that are consistent with the Deposits schema and contains a lot of other validators used internally across several Deposits products.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "keywords": [
+    "Deposits",
+    "validators",
+    "vuelidate"
+  ],
+  "author": "Deposits",
+  "license": "ISC"
+}
