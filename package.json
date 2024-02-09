@@ -11,6 +11,5 @@
     "validators",
     "vuelidate"
   ],
-  "author": "Deposits",
-  "license": "ISC"
+  "author": "Deposits"
 }
