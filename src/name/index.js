@@ -1,5 +1,5 @@
 const name = (value) => {
-  if (value.length > 40) {
+  if (value.length > 40 || value.length < 2) {
     return false;
   }
 

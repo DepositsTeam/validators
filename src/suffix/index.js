@@ -1,5 +1,5 @@
 const suffix = (value) => {
-    if (value.length > 5) {
+    if (value.length > 5 || value.length < 2) {
         return false;
     }
 
@@ -10,3 +10,4 @@ const suffix = (value) => {
 module.exports = {
     suffix,
 };
+

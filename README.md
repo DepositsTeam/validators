@@ -12,3 +12,24 @@ To install the validators, simply run the following command in your project dire
 ```bash  
 npm install @deposits/validators
 ```
+
+## Available Validation Rules
+The following validators are available in this package:
+
+### `accountNumber`
+This checks if the value being validated is a valid US account number. It should be a numeric string consisting of between 4-17 digits.
+
+### `ein`
+This checks if the value being validated is a valid EIN. It expects a numeric string in the format `XX-XXXXXXX`.
+
+### `email`
+This checks if the value being validated is a valid email address.
+
+### `name`
+This validates if the value being validated is a valid name. It expects a string with a length between 2 and 40 characters.
+
+### `routing_number`
+This checks if the value being validated is a valid US routing number. It should be a numeric string consisting of 9 digits and passes the ABA checksum algorithm.
+
+### `suffix`
+This checks if the value being validated is a valid suffix. It expects a string with a length between 2 and 10 characters.
