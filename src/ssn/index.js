@@ -1,12 +1,12 @@
-const swiftCode = (value) => {
+const ssn = (value) => {
   // Remove any whitespace
   value = value.trim();
 
-  const regex = /^[A-Za-z0-9]{8}([A-Za-z0-9]{3})?$/;
+  const regex = /^[0-8]\d{2}-\d{2}-\d{4}$/;
 
   return regex.test(value);
 };
 
 module.exports = {
-  swiftCode,
+  ssn,
 };

@@ -29,10 +29,6 @@ This checks if the value being validated is a valid US account number. It should
 
 This checks if the value being validated is a valid credit card number. It should be a numeric string consisting of between 13-19 digits and should pass the Luhn's checksum algorithm as well as prefix and suffix checks for different card providers.
 
-### `driversLicenseNumber`
-
-This checks if the value being validated is a valid US driver's license number.
-
 ### `ein`
 
 This checks if the value being validated is a valid EIN. It expects a numeric string in the format `XX-XXXXXXX`.
@@ -43,7 +39,7 @@ This checks if the value being validated is a valid email address.
 
 ### `itin`
 
-This checks if the value being validated is a valid Individual Taxpayer Identification Number (ITIN).
+This checks if the value being validated is a valid Individual Taxpayer Identification Number (ITIN). It expects a numeric string in the format 9XX-XX-XXXX
 
 ### `naics`
 
@@ -60,6 +56,10 @@ This validates if the value being validate is a valid passport number. It expect
 ### `routingNumber`
 
 This checks if the value being validated is a valid US routing number. It should be a numeric string consisting of 9 digits and passes the ABA checksum algorithm.
+
+### `ssn`
+
+This checks if the value being validated is a valid Social Security Number (SSN). It expects a numeric string in the format XXX-XX-XXXX
 
 ### `swiftCode`
 
