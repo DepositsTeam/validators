@@ -1,12 +1,18 @@
 {
   "name": "@deposits/validators",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A list of Vuelidate validators that are consistent with the Deposits schema and contains a lot of other validators used internally across several Deposits products.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.js"
+    }
+  },
   "scripts": {
     "test": "jest",
     "prepare": "husky",
-    "build": "rm -rf dist && rollup --config rollup.config.js"
+    "build": "rm -rf dist && mkdir dist && cp package.json dist && rollup --config rollup.config.js"
   },
   "type": "module",
   "keywords": [

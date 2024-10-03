@@ -11,8 +11,15 @@ export default defineConfig({
     }),
     terser(),
   ],
-  output: {
-    file: "dist/index.js",
-    format: "es",
-  },
+  output: [
+    {
+      file: "dist/index.js",
+      format: "es",
+    },
+    {
+      name: "DepositsValidators",
+      file: "dist/index.umd.js",
+      format: "umd",
+    },
+  ],
 });

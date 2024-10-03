@@ -17,6 +17,51 @@ To install the validators, simply run the following command in your project dire
 npm install @deposits/validators
 ```
 
+## Basic Usage
+
+Since the package exports pure functions that return Booelan values, you just need to import the validator you need and use it as is or plug it into a validation library.
+
+```javascript
+import { email } from "@deposits/validators";
+```
+
+### Usage with Vuelidate
+
+```vue
+<template>
+  <script setup>
+    import { email } from "@deposits/validators";
+    import { helpers, required } from "@vuelidate/validators";
+    import { useVuelidate } from "@vuelidate/core";
+    import { reactive } from "vue";
+
+    const payload = reactive({
+      email: "",
+      password: "",
+    });
+
+    const rules = {
+      email: {
+        required: helpers.withMessage("Email is required", required),
+        email: helpers.withMessage("Please enter a valid email", email),
+      },
+      password: {
+        required: helpers.withMessage("Password is required", required),
+      },
+    };
+
+    const v$ = useVuelidate(rules, payload, { $stopPropagation: true });
+
+    const submit = () => {
+      v$.value.$validate();
+      if (!v$.value.$error) {
+        // Submit
+      }
+    };
+  </script>
+</template>
+```
+
 ## Available Validation Rules
 
 The following validators are available in this package:
