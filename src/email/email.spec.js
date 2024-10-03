@@ -1,5 +1,5 @@
-const { email } = require("./index");
-const { expect, test } = require("@jest/globals");
+import { email } from "./index";
+import { expect, test } from "@jest/globals";
 test("Test a valid email", () => {
   expect(email("eric@deposits.inc")).toBe(true);
   expect(email("eric.mcwinner@deposits.inc")).toBe(true);

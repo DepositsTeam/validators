@@ -1,4 +1,4 @@
-const accountNumber = (value) => {
+export const accountNumber = (value) => {
   // Remove any whitespace
   value = value.trim();
 
@@ -19,8 +19,4 @@ const accountNumber = (value) => {
 
   // Check allowed characters
   return pattern.test(value);
-};
-
-module.exports = {
-  accountNumber,
 };

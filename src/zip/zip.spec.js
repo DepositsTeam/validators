@@ -1,5 +1,5 @@
-const { zip } = require("./index");
-const { expect, test } = require("@jest/globals");
+import { zip } from "./index.js";
+import { expect, test } from "@jest/globals";
 
 // Valid zip codes
 test("returns true for a valid 5-digit zip code", () => {

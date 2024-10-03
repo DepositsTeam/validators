@@ -1,4 +1,4 @@
-const zip = (value) => {
+export const zip = (value) => {
   // Remove any whitespace
   value = value.trim();
 
@@ -8,6 +8,3 @@ const zip = (value) => {
   return regex.test(value);
 };
 
-module.exports = {
-  zip,
-};

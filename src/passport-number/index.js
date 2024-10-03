@@ -1,4 +1,4 @@
-const passportNumber = (value) => {
+export const passportNumber = (value) => {
   // Remove any whitespace
   value = value.trim();
 
@@ -6,8 +6,4 @@ const passportNumber = (value) => {
   const regex = /^[a-zA-Z0-9]{9}$/;
 
   return regex.test(value);
-};
-
-module.exports = {
-  passportNumber,
 };

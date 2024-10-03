@@ -1,5 +1,5 @@
-const { routingNumber } = require("./index");
-const { expect, test } = require("@jest/globals");
+import { routingNumber } from "./index";
+import { expect, test } from "@jest/globals";
 
 test("returns true for a valid routing number", () => {
   expect(routingNumber("021000021")).toBe(true);

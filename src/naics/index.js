@@ -1,4 +1,4 @@
-const naics = (value) => {
+export const naics = (value) => {
   const validSectors = {
     11: true,
     21: true,
@@ -41,8 +41,4 @@ const naics = (value) => {
 
   // Check if the sector is within the valid range (11-99)
   return !!validSectors[sector];
-};
-
-module.exports = {
-  naics,
 };

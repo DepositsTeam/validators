@@ -1,5 +1,5 @@
-const { passportNumber } = require("./index");
-const { expect, test } = require("@jest/globals");
+import { passportNumber } from "./index";
+import { expect, test } from "@jest/globals";
 test("returns true for a valid passport number with 9 characters", () => {
   expect(passportNumber("A1B2C3D4E")).toBe(true);
   expect(passportNumber("123456789")).toBe(true);

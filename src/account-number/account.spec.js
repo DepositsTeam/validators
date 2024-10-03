@@ -1,5 +1,5 @@
-const { accountNumber } = require("./index");
-const { expect, test } = require("@jest/globals");
+import { accountNumber } from "./index";
+import { expect, test } from "@jest/globals";
 
 test("returns true for a valid account number", () => {
   expect(accountNumber("021000021")).toBe(true);

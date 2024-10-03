@@ -1,5 +1,5 @@
-const { name } = require("./index.js");
-const { expect, test } = require("@jest/globals");
+import { name } from "./index.js";
+import { expect, test } from "@jest/globals";
 
 test("Test a valid first name", () => {
   expect(name("Eric")).toBe(true);
@@ -58,9 +58,9 @@ test("Prevents special characters", () => {
 });
 
 test("Allows only - . and ' as special characters", () => {
-    expect(name("Eric-.'")).toBe(true);
+  expect(name("Eric-.'")).toBe(true);
 });
 
 test("Prevents names with length of characters greater than 40", () => {
-    expect(name("MariaAbdEl-MaksoudAlyMohamedEl-GuindyErick")).toBe(false);
-})
+  expect(name("MariaAbdEl-MaksoudAlyMohamedEl-GuindyErick")).toBe(false);
+});

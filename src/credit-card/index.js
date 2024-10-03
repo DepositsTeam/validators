@@ -1,4 +1,4 @@
-const creditCard = (value) => {
+export const creditCard = (value) => {
   // trim the value
   value = value.trim();
 
@@ -48,8 +48,4 @@ const creditCard = (value) => {
   }
 
   return false;
-};
-
-module.exports = {
-  creditCard,
 };

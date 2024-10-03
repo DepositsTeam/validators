@@ -14,7 +14,11 @@
   ],
   "author": "Deposits",
   "devDependencies": {
+    "@babel/cli": "^7.25.7",
+    "@babel/core": "^7.25.7",
+    "@babel/preset-env": "^7.25.7",
     "@jest/globals": "^29.7.0",
+    "core-js": "^3.38.1",
     "jest": "^29.7.0",
     "prettier": "^3.2.5"
   },

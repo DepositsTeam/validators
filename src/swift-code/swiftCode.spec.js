@@ -1,5 +1,5 @@
-const { swiftCode } = require("./index");
-const { expect, test } = require("@jest/globals");
+import { swiftCode } from "./index";
+import { expect, test } from "@jest/globals";
 
 // Valid SWIFT codes
 test("returns true for a valid SWIFT code with 8 characters", () => {

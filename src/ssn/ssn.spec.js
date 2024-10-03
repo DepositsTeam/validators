@@ -1,5 +1,5 @@
-const { ssn } = require("./index");
-const { expect, test } = require("@jest/globals");
+import { ssn } from "./index";
+import { expect, test } from "@jest/globals";
 
 // Valid SSNs
 test("returns true for a valid SSN", () => {
