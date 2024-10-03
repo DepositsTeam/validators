@@ -1,7 +1,7 @@
 {
   "name": "@deposits/validators",
-  "version": "0.0.1",
-  "description": "A list of Vuelidate validators that are consistent with the Deposits schema and contains a lot of other validators used internally across several Deposits products.",
+  "version": "0.0.2",
+  "description": "A collection of Fintech-specific and general-purpose validators, designed to extend popular validation libraries like Vuelidate, Zod, and yup.",
   "main": "dist/index.js",
   "exports": {
     ".": {
