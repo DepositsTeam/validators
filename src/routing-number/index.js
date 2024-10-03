@@ -18,8 +18,6 @@ export const routingNumber = (value) => {
       parseInt(value.charAt(i + 2), 10);
   }
 
-  console.log(checksum);
-
   // Error Message: Invalid routing number checksum.
   return checksum % 10 === 0;
 };
