@@ -2,12 +2,9 @@
 
 ## Overview
 
-This repository contains a list of validators to be used with the Vuelidate library for Vue.js. It redefines several
-validators to be consistent with the Deposits internal standards and adds a number of validators that are used across
-different projects.
+This repository contains a list of validators that are relevant to the Fintech space. It provides a bunch of sector-specific validators as well as other validators that don't normally come out of the box in libraries like Vuelidate, Zod and yup.
 
-The validators are designed to be used with Vuelidate in Vue.js but can also be used with other libraries or frameworks that support
-custom validators as all the validators consist of pure functions that return a boolean value.
+All validators in this library are pure functions that return Boolean values so they can be used to extend your favorite validation library out of the box.
 
 ## Installation
 
