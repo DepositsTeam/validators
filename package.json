@@ -4,7 +4,8 @@
   "description": "A list of Vuelidate validators that are consistent with the Deposits schema and contains a lot of other validators used internally across several Deposits products.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prepare": "husky"
   },
   "type": "module",
   "keywords": [
@@ -19,6 +20,7 @@
     "@babel/preset-env": "^7.25.7",
     "@jest/globals": "^29.7.0",
     "core-js": "^3.38.1",
+    "husky": "^9.1.6",
     "jest": "^29.7.0",
     "prettier": "^3.2.5"
   },
