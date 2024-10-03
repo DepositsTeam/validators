@@ -12,7 +12,7 @@
   "scripts": {
     "test": "jest",
     "prepare": "husky",
-    "build": "rm -rf dist && mkdir dist && cp package.json dist && rollup --config rollup.config.js"
+    "build": "rm -rf dist && rollup --config rollup.config.js"
   },
   "type": "module",
   "keywords": [
