@@ -68,12 +68,10 @@ import { object, string } from "yup";
 const schema = object().shape({
   accountNumber: string()
     .required("Please enter account number")
-    .matches(/^\d{4,17}$/, "Please enter a valid account number")
     .test("account-number", "Enter a valid account number", accountNumber),
   routingNumber: string()
     .required("Please enter a routing number")
-    .matches(/^\d{9}$/, "Please enter a valid routing number")
-    .test("routingNumber", "Enter a valid account number", routingNumber),
+    .test("routingNumber", "Enter a valid routing number", routingNumber),
 });
 ```
 
