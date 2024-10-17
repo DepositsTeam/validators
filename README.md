@@ -97,7 +97,7 @@ This checks if the value being validated is a valid email address.
 
 ### `itin`
 
-This checks if the value being validated is a valid Individual Taxpayer Identification Number (ITIN). It expects a numeric string in the format 9XX-XX-XXXX
+This checks if the value being validated is a valid Individual Taxpayer Identification Number (ITIN). It expects a numeric string in the format 9XX-XX-XXXX.
 
 ### `naics`
 
@@ -117,7 +117,11 @@ This checks if the value being validated is a valid US routing number. It should
 
 ### `ssn`
 
-This checks if the value being validated is a valid Social Security Number (SSN). It expects a numeric string in the format XXX-XX-XXXX
+This checks if the value being validated is a valid Social Security Number (SSN). It expects a numeric string in the format XXX-XX-XXXX.
+
+### `strongPassword`
+
+This checks if the value being validated is a "strong" password. It expects a string that is at least 8 characters in length and contains at least one of a lower case letter, upper case letter, number and special character.
 
 ### `swiftCode`
 
