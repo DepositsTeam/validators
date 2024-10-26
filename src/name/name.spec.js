@@ -8,7 +8,7 @@ describe("name", () => {
     expect(name("ERIC")).toBe(true);
   });
 
-  test("Allows only multiple words", () => {
+  test("Allows multiple words", () => {
     expect(name("Eric Apriok")).toBe(true);
   });
 
