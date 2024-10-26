@@ -105,7 +105,11 @@ This checks if the value being validated is a valid North American Industry Clas
 
 ### `name`
 
-This validates if the value being validated is a valid name. It expects a string with a length between 2 and 40 characters.
+This checks if the value being validated is a valid name. It expects a string with a length between 2 and 40 characters.
+
+### `oneWord`
+
+This checks that the value being validated is a single word. It expects a string with at least one character and no spaces.
 
 ### `passportNumber`
 

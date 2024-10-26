@@ -1,6 +1,6 @@
 {
   "name": "@deposits/validators",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A collection of Fintech-specific and general-purpose validators, designed to extend popular validation libraries like Vuelidate, Zod, and yup.",
   "main": "dist/index.js",
   "exports": {

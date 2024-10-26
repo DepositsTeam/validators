@@ -5,6 +5,7 @@ export { email } from "./email/index.js";
 export { itin } from "./itin/index.js";
 export { naics } from "./naics/index.js";
 export { name } from "./name/index.js";
+export { oneWord } from "./one-word/index.js";
 export { passportNumber } from "./passport-number/index.js";
 export { routingNumber } from "./routing-number/index.js";
 export { ssn } from "./ssn/index.js";

@@ -8,8 +8,8 @@ describe("name", () => {
     expect(name("ERIC")).toBe(true);
   });
 
-  test("Allows only one word", () => {
-    expect(name("Eric Apriok")).toBe(false);
+  test("Allows only multiple words", () => {
+    expect(name("Eric Apriok")).toBe(true);
   });
 
   test("Prevents special characters", () => {

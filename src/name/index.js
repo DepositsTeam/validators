@@ -3,6 +3,6 @@ export const name = (value) => {
     return false;
   }
 
-  const regex = /^[a-zA-Z0-9'.-]*$/;
+  const regex = /^[a-zA-Z0-9'.\-\s]*$/;
   return regex.test(value);
 };
