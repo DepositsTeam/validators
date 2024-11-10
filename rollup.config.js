@@ -21,5 +21,10 @@ export default defineConfig({
       file: "dist/index.umd.js",
       format: "umd",
     },
+    {
+      name: "DepositsValidators",
+      file: "dist/index.cjs",
+      format: "cjs",
+    },
   ],
 });
